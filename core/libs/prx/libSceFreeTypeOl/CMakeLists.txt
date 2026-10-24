@@ -1,5 +1,6 @@
-add_library(libSceFreeTypeOl SHARED EXCLUDE_FROM_ALL Export.cpp ../libSceFreeType/src/OutlineBorders.cpp)
+add_library(libSceFreeTypeOl SHARED EXCLUDE_FROM_ALL Export.cpp ../libSceFreeType/src/OutlineBorders.cpp ../libSceFreeType/src/OutlineEmboldenExports.cpp)
 target_include_directories(libSceFreeTypeOl PRIVATE ${LIBS_INCLUDE_DIR})
+target_link_libraries(libSceFreeTypeOl PRIVATE libSceFreeType)
 configure_windows_unwind(libSceFreeTypeOl)
 
 if(BUILD_TESTING)

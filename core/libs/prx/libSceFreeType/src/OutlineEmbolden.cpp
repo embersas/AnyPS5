@@ -56,6 +56,10 @@ int Embolden(GuestOutline* outline, std::int64_t xStrength, std::int64_t yStreng
 
 extern "C" {
 
+int APS5_VABI FreeTypeOutlineEmbolden_nid_no_patch(GuestOutline* outline, std::int64_t xStrength, std::int64_t yStrength, const char* function) {
+    return Embolden(outline, xStrength, yStrength, function);
+}
+
 int APS5_VABI FT_Outline_Embolden_nid_postfix(GuestOutline* outline, std::int64_t strength) {
     return Embolden(outline, strength, strength, __func__);
 }
