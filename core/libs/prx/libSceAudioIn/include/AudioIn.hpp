@@ -46,5 +46,11 @@ int APS5_VABI sceAudioInSetMode(void);
 int APS5_VABI sceAudioInSetMode2(void);
 int APS5_VABI sceAudioInExtCtrl(void);
 int APS5_VABI sceAudioInInputs(void);
+int APS5_VABI sceAudioInExtClose(void);
+int APS5_VABI sceAudioInExtInput(void);
+int APS5_VABI sceAudioInExtOpen(void);
+int APS5_VABI sceAudioInExtSetAecMode(void);
+int APS5_VABI sceAudioInSetConnectionsForUser(void);
+int APS5_VABI sceAudioInSetFocusForUser(void);
 
 }

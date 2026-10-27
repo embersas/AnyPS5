@@ -367,4 +367,34 @@ int APS5_VABI sceAudioInInputs(void) {
     return 0;
 }
 
+int APS5_VABI sceAudioInExtClose(void) {
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceAudioInExtInput(void) {
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceAudioInExtOpen(void) {
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceAudioInExtSetAecMode(void) {
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceAudioInSetConnectionsForUser(void) {
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceAudioInSetFocusForUser(void) {
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
 }
